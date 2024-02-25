@@ -29,8 +29,8 @@ body {
 }
 
 .container {
-    margin-left: 165px;
-    margin-right: 165px;
+    padding-left: 165px;
+    padding-right: 165px;
 }
 
 .header {
@@ -56,6 +56,7 @@ body {
     font-family: var(--poppins);
     font-size: 15px;
     font-weight: 700;
+    transition: .5s;
 }
 
 .header-right-side {
@@ -72,6 +73,15 @@ body {
     font-family: var(--poppins);
     font-size: 15px;
     font-weight: 700;
+    transition: .5s;
+}
+
+.header-right-link:active{
+    color: var(--primary-color);
+}
+
+.header-left-link:active{
+    color: var(--primary-color);
 }
 
 .all-btn {
@@ -82,6 +92,11 @@ body {
     background-color: var(--btn-color);
     padding: 8px 24px;
     border-radius: 28px;
+}
+
+.all-btn:active{
+    color: #9AE3E3;
+    opacity: .5;
 }
 
 .hero {
@@ -173,89 +188,163 @@ body {
     z-index: 1;
 }
 
-.search-btn:hover {
+.search-btn:active {
     background-color: #9AE3E3;
+    opacity: .5;
 }
 
-.cards-section {
-    padding-top: 210px;
+.main {
     background-color: var(--background);
 }
 
-.cards-about {
+.cards-section {
+    margin-top: 204px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .cards-title {
-    width: 540px;
-    color: #34313D;
+    color: var(--primary-color);
     text-align: center;
-    font-family: var(--poppins);
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -1px;
-    margin-bottom: 18px;
 }
 
 .cards-desc {
-    width: 540px;
-    color: #9E9AA8;
-    font-family: var(--poppins);
+    max-width: 540px;
+    width: 100%;
+    color: var(--text-color);
+    text-align: center;
     font-size: 18px;
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0.123px;
+    margin-left: 285px;
+    margin-top: 18px;
 }
 
 .cards {
     display: flex;
+    margin-top: 56px;
     column-gap: 30px;
+    padding-top: 56px;
+    padding-bottom: 120px;
 }
 
 .card {
-    background-color: var(--white);
+    width: 350px;
+    height: 267px;
     border-radius: 5px;
+    background: #FFF;
     padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 41px;
-    padding-top: 20px;
 }
 
-.card:nth-child(1) {
-    margin-top: 56px;
-}
-
-.card:nth-child(2) {
-    margin-top: 100px;
-}
-
-.card:nth-child(3) {
-    margin-top: 144px;
-}
-
-.card-img {
-    border-radius: 50%;
+.card-icon {
     width: 88px;
     height: 88px;
+    border-radius: 50%;
+    background-image: var(--card-icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-33px);
 }
 
 .card-title {
-    color: var(--primary-color);
-    font-family: var(--poppins);
+    color: #34313D;
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 12px;
 }
 
 .card-desc {
-    width: 286px;
-    color: var(--text-color);
-    font-family: var(--poppins);
+    margin-top: 12px;
+    max-width: 286px;
+    width: 100%;
+    color: #9E9AA8;
     font-size: 15px;
     font-weight: 500;
     line-height: 26px;
+}
+
+.card:nth-child(3) {
+    transform: translateY(44px);
+}
+
+.card:nth-child(4) {
+    transform: translateY(88px);
+}
+
+.boost-section {
+    width: 100%;
+    margin-top: 120px;
+    padding-top: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--card-icon-color);
+    padding-bottom: 69px;
+}
+
+.boost-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+}
+
+.boost-btn {
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 14px 40px;
+}
+
+.footer {
+    background-color: #232127;
+    padding-top: 71px;
+    padding-bottom: 70px;
+}
+
+.footer__logo {}
+
+.lists{
+    display: flex;
+}
+
+.footer-center-list {
+}
+
+.footer-link {
+    color: #BFBFBF;
+    font-family: var(--poppins);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.234px;
+    transition: .5s;
+}
+
+.footer-link:active{
+    color: #2BD0D0;
+}
+
+.footer-last-list {
+    display: flex;
+}
+
+.footer-last-link {
+    color: white;
+    transition: .5s;
+}
+
+.footer-last-link:active{
+    color: #2BD0D0;
 }
